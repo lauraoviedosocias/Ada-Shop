@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADA Shop</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
 
@@ -15,12 +16,94 @@
     </nav>
 
     <header>
-<div class="titulo">Electrónica</div>
+<div class="titulo">
+    |   <h1>Electrónica</h1>
+</div>
     </header>
 
-    <section class="contenedor-seccion">
+<section class="contenedor-seccion">
+    
+    <aside class="filtros">
+    
+        <div class="contenedor-filtros">
+            <h2 class="titulo-filtros">FILTROS</h2>
+            <div class="contenedor-limpiar">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+                <p class="limpiar">Limpiar</p>
+            </div>
+    
+        </div>
+
+        <div class="contenedor-busqueda">
+            <h2 class="titulo-busqueda">BÚSQUEDA</h2>
+            <label for="busqueda">
+            <input type="text" id="busqueda" name="search" placeholder="Buscar productos" />
+            </label>
+        </div>
+
+        <div class="contenedor-categorias">
+            <h2 class="titulo-categorias">CATEGORÍAS</h2>
+            <label for="consolas">Consolas
+                <input type="checkbox" id="consolas" name="categories" value="consolas"/>
+            </label>
+            <label for="notebooks">Notebooks
+                <input type="checkbox" id="notebooks" name="categories" value="notebooks"/>
+            </label>
+            <label for="camaras">Cámaras
+                <input type="checkbox" id="camaras" name="categories" value="camaras"/>
+            </label>
+            <label for="celulares">Celulares
+                <input type="checkbox" id="celulares" name="categories" value="celulares"/>
+            </label>
+            <label for="accesorios">Accesorios
+                <input type="checkbox" id="accesorios" name="categories" value="accesorios"/>
+            </label>
+        </div>
+
+        <div class="contenedor-puntajes">
+            <h2 class="titulo-puntajes">PUNTAJE</h2>
+            <label for="puntajes">
+                <div class="contenedor-opciones">
+                    <div class="contenedor-opciones">
+                    <input type="checkbox" id="puntajes" name="puntajes" value="5"/>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i></div>
+                    <p class="valor">5</p>
+                </div>
+            
+            <label for="puntajes">
+                <div class="contenedor-opciones">
+                    <div class="contenedor-opciones">
+                    <input type="checkbox" id="puntajes" name="puntajes" value="5"/>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star"></i></div>
+                    <p class="valor">4</p>
+                </div>    
+                
+            </label>
+
+
+
+
+        </div>
         
-        <aside class="menu-filtros">Menu filtros</aside>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </aside>
 
 
         <main class="contenedor-productos">Contenedor principal

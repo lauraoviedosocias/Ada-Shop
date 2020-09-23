@@ -31,11 +31,39 @@ header {
 
 }
 /* FILTROS */
-.menu-filtros {
+.filtros {
     background-color: green;
     height: 600px;
     flex-grow: 1;
 }
+.contenedor-filtros {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.titulo-filtros {
+    margin: 0;
+}
+.contenedor-limpiar {
+    display: flex;
+    margin-top: 4px;
+    
+}
+.limpiar {
+    margin: 2px;
+}
+.contenedor-categorias {
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-opciones {
+    display: flex;
+    
+}
+.valor {
+    margin: 0;
+}
+
 /* PRODUCTOS */
 .contenedor-productos {
     background-color: yellow;
