@@ -1,0 +1,67 @@
+nav {
+    background-color: red;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.home {
+    background-color: white;
+    margin: 5px;
+}
+.carrito {
+    background-color: white;
+    margin: 5px;
+}
+
+
+/* HEADER */
+header {
+    background-color: blue;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* SECCIÓN PRINCIPAL */
+.contenedor-seccion {
+    display: flex;
+
+}
+/* FILTROS */
+.menu-filtros {
+    background-color: green;
+    height: 600px;
+    flex-grow: 1;
+}
+/* PRODUCTOS */
+.contenedor-productos {
+    background-color: yellow;
+    height: 1500px;
+    flex-grow: 5;
+    flex-direction: column;
+}
+
+.barra {
+    background-color: pink;
+    height: 30px;
+}
+
+.contenedor-tarjetas {
+    background-color: tomato;
+    /* width: 400px; */
+    height: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background-color: teal;
+    border: 1px solid black;
+    margin: 5px;
+    flex: 1 1 300px;
+}
+
+
