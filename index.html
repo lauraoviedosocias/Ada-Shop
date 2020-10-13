@@ -8,140 +8,423 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
+    <nav> 
+        <div class="contenedor-logo">
+            <img src="img/logoAdaPequeño.jpeg" class="logo-ada-nav">
+            <p>ADA SHOP</p>
+        </div>
+    
 
-    <nav>
-        <div class="home">ADA SHOP</div>
-
-        <div class="carrito">Carrito (0 items)</div>
+        <button class="agregar-carrito">
+             <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+            <p>Carrito (<span class="cantidad-carrito">0</span> items) </p>
+        </button>
     </nav>
-
+<!-- Acá empieza el header -->
     <header>
-<div class="titulo">
-    |   <h1>Electrónica</h1>
-</div>
+        <h1>ELECTRÓNICA</h1>
     </header>
-
+<!-- Acá empieza la sección principal -->
 <section class="contenedor-seccion">
     
-    <aside class="filtros">
-    
+<!-- Acá empieza el aside de filtros -->
+    <aside>
+    <form>
         <div class="contenedor-filtros">
-            <h2 class="titulo-filtros">FILTROS</h2>
-            <div class="contenedor-limpiar">
+            <h2>FILTROS</h2>
+
+<!-- Botón Limpiar -->
+            <button class="boton-limpiar">
                 <i class="fa fa-trash" aria-hidden="true"></i>
-                <p class="limpiar">Limpiar</p>
-            </div>
+                <p>Limpiar</p>
+            </button>
     
         </div>
-
+<!-- Filtro Búsqueda -->
         <div class="contenedor-busqueda">
-            <h2 class="titulo-busqueda">BÚSQUEDA</h2>
-            <label for="busqueda">
-            <input type="text" id="busqueda" name="search" placeholder="Buscar productos" />
+            <h3>BÚSQUEDA</h3>
+            <label for="filtro-busqueda">
+            <input type="text" id="filtro-busqueda" name="search" placeholder="Buscar productos" />
             </label>
         </div>
-
+<!-- Filtro Categorías -->
         <div class="contenedor-categorias">
-            <h2 class="titulo-categorias">CATEGORÍAS</h2>
-            <label for="consolas">Consolas
+            <h3>CATEGORÍAS</h3>
+            <label for="consolas">
+                <div class="contenedor-opciones">
                 <input type="checkbox" id="consolas" name="categories" value="consolas"/>
+                <p>Consolas</p>
+            </div>
             </label>
-            <label for="notebooks">Notebooks
+            <label for="notebooks">
+                <div class="contenedor-opciones">
                 <input type="checkbox" id="notebooks" name="categories" value="notebooks"/>
+                <p>Notebooks</p>
+                </div>
             </label>
-            <label for="camaras">Cámaras
+            <label for="camaras">
+                <div class="contenedor-opciones">
                 <input type="checkbox" id="camaras" name="categories" value="camaras"/>
+                <p>Cámaras</p>
+                </div>
             </label>
-            <label for="celulares">Celulares
+            <label for="celulares">
+                <div class="contenedor-opciones">
                 <input type="checkbox" id="celulares" name="categories" value="celulares"/>
+                <p>Celulares</p>
+                </div>
             </label>
-            <label for="accesorios">Accesorios
+            <label for="accesorios">
+                <div class="contenedor-opciones">
                 <input type="checkbox" id="accesorios" name="categories" value="accesorios"/>
+                <p>Accesorios</p>
+                </div>
             </label>
         </div>
-
+<!-- Aca empieza el filtro por puntaje -->
         <div class="contenedor-puntajes">
-            <h2 class="titulo-puntajes">PUNTAJE</h2>
+            <h3>PUNTAJE</h3>
+
             <label for="puntajes">
                 <div class="contenedor-opciones">
-                    <div class="contenedor-opciones">
-                    <input type="checkbox" id="puntajes" name="puntajes" value="5"/>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i></div>
-                    <p class="valor">5</p>
+                    <input type="checkbox" id="puntajes" name="puntajes" value="5" />
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <p>(5)</p>
                 </div>
+            </label>
+
+            <label for="puntajes">
+                <div class="contenedor-opciones">
+                    <input type="checkbox" id="puntajes" name="puntajes" value="4" />
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <p>(4)</p>
+                </div>
+            </label>
+
+            <label for="puntajes">
+                <div class="contenedor-opciones">
+                    <input type="checkbox" id="puntajes" name="puntajes" value="3" />
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <p>(3)</p>
+                </div>
+            </label>
             
             <label for="puntajes">
                 <div class="contenedor-opciones">
-                    <div class="contenedor-opciones">
-                    <input type="checkbox" id="puntajes" name="puntajes" value="5"/>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fas fa-star"></i></div>
-                    <p class="valor">4</p>
-                </div>    
-                
+                    <input type="checkbox" id="puntajes" name="puntajes" value="2" />
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <p>(2)</p>
+                </div>
             </label>
-
-
-
+            
+            <label for="puntajes">
+                <div class="contenedor-opciones">
+                    <input type="checkbox" id="puntajes" name="puntajes" value="1" />
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <p>(1)</p>
+                </div>
+            </label>
+            
+            
 
         </div>
-        
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
+   
+    </form>
         </aside>
 
+<!-- Acá termina el aside de filtros -->
 
-        <main class="contenedor-productos">Contenedor principal
+<!-- Acá empieza la sección de productos -->
+    
+<main class="contenedor-productos">
 
-            <div class="barra">Hola, soy la barra</div>
+    <div class="barra">
+        <p>Mostrando <span class="cantidad-productos">12</span> producto(s) de 12</p>
 
-            <div class="contenedor-tarjetas">
+        <div class="ver-como">
+            <p>Ver como</p>
+            <button class="mostrar-grilla"><i class="fas fa-th" aria-hidden="true"></i></button>
+            <button class="mostrar-lista"><i class="fas fa-list" aria-hidden="true"></i></button>
+        </div>
+    </div>
 
-                <div class="tarjeta"></div>
-                <div class="tarjeta"></div>
-                <div class="tarjeta"></div>
-                <div class="tarjeta"></div>
-                <div class="tarjeta"></div>
-                <div class="tarjeta"></div>
-                <div class="tarjeta"></div>
-                <div class="tarjeta"></div>
-                <div class="tarjeta"></div>
-                <div class="tarjeta"></div>
-                <div class="tarjeta"></div>
-                <div class="tarjeta"></div>
 
+    <div class="contenedor-tarjetas">
+
+        <article class="tarjeta" data-nombre:"celular-xiaomi" data-categoria:"celulares" data-precio: "22499" data-puntaje:"3">
+        
+            <div class="contenedor-img">
+                <img src=img/celularXiaomi.jpeg class="imagen-producto">
             </div>
+        
+            <div class="contenedor-descripcion">
+                <h3 class="nombre-producto">Celular Xiaomi</h3>
+                <p class="precio-producto">$22499</p>
+                <div class="puntaje">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <button class="boton-comprar">COMPRAR</button>
+        
+        </article>
+        <article class="tarjeta" data-nombre:"playstation" data-categoria:"consolas" data-precio: "59999" data-puntaje:"5">
+        
+            <div class="contenedor-img">
+                <img src=img/consolaSony.jpeg class="imagen-producto">
+            </div>
+        
+            <div class="contenedor-descripcion">
+                <h3 class="nombre-producto">PlayStation 4</h3>
+                <p class="precio-producto">$59999</p>
+                <div class="puntaje">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <button class="boton-comprar">COMPRAR</button>
+        
+        </article>
+        <article class="tarjeta" data-nombre:"camara-nikon" data-categoria:"camaras" data-precio: "54999" data-puntaje:"2">
+        
+            <div class="contenedor-img">
+                <img src=img/camaraNikon.jpeg class="imagen-producto">
+            </div>
+        
+            <div class="contenedor-descripcion">
+                <h3 class="nombre-producto">Cámara Nikon</h3>
+                <p class="precio-producto">$54999</p>
+                <div class="puntaje">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <button class="boton-comprar">COMPRAR</button>
+        
+        </article>
+        <article class="tarjeta" data-nombre:"auriculares-sony" data-categoria:"accesorios" data-precio: "24999" data-puntaje:"3">
+        
+            <div class="contenedor-img">
+                <img src=img/sony.png class="imagen-producto">
+            </div>
+        
+            <div class="contenedor-descripcion">
+                <h3 class="nombre-producto">Auriculares Sony</h3>
+                <p class="precio-producto">$24999</p>
+                <div class="puntaje">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <button class="boton-comprar">COMPRAR</button>
+        
+        </article>
+        <article class="tarjeta" data-nombre:"consola-nintendo" data-categoria:"consolas" data-precio: "46999" data-puntaje:"5">
+        
+            <div class="contenedor-img">
+                <img src=img/switch.jpg class="imagen-producto">
+            </div>
+        
+            <div class="contenedor-descripcion">
+                <h3 class="nombre-producto">Nintendo Switch</h3>
+                <p class="precio-producto">$46999</p>
+                <div class="puntaje">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <button class="boton-comprar">COMPRAR</button>
+        
+        </article>
+        <article class="tarjeta" data-nombre:"notebook-asus" data-categoria:"notebooks" data-precio: "32999" data-puntaje:"1">
+        
+            <div class="contenedor-img">
+                <img src=img/asus.png class="imagen-producto">
+            </div>
+        
+            <div class="contenedor-descripcion">
+                <h3 class="nombre-producto">Notebook Asus</h3>
+                <p class="precio-producto">$32999</p>
+                <div class="puntaje">
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <button class="boton-comprar">COMPRAR</button>
+        
+        </article>
+        <article class="tarjeta" data-nombre:"notebook-msi" data-categoria:"notebooks" data-precio: "37999" data-puntaje:"3">
+        
+            <div class="contenedor-img">
+                <img src=img/msi.png class="imagen-producto">
+            </div>
+        
+            <div class="contenedor-descripcion">
+                <h3 class="nombre-producto">Notebook MSI</h3>
+                <p class="precio-producto">$37999</p>
+                <div class="puntaje">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <button class="boton-comprar">COMPRAR</button>
+        
+        </article>
+        <article class="tarjeta" data-nombre:"auriculares-philips" data-categoria:"accesorios" data-precio: "11999" data-puntaje:"2">
+        
+            <div class="contenedor-img">
+                <img src=img/philips.png class="imagen-producto">
+            </div>
+        
+            <div class="contenedor-descripcion">
+                <h3 class="nombre-producto">Auriculares Philips</h3>
+                <p class="precio-producto">$11999</p>
+                <div class="puntaje">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <button class="boton-comprar">COMPRAR</button>
+        
+        </article>
+        <article class="tarjeta" data-nombre:"notebook-apple" data-categoria:"notebooks" data-precio: "119999" data-puntaje:"4">
+        
+            <div class="contenedor-img">
+                <img src=img/macbook.png class="imagen-producto">
+            </div>
+        
+            <div class="contenedor-descripcion">
+                <h3 class="nombre-producto">Macbook</h3>
+                <p class="precio-producto">$119999</p>
+                <div class="puntaje">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <button class="boton-comprar">COMPRAR</button>
+        
+        </article>
+        <article class="tarjeta" data-nombre:"celular-apple" data-categoria:"celulares" data-precio: "79999" data-puntaje:"3">
+        
+            <div class="contenedor-img">
+                <img src=img/iphone.jpeg class="imagen-producto">
+            </div>
+        
+            <div class="contenedor-descripcion">
+                <h3 class="nombre-producto">Iphone</h3>
+                <p class="precio-producto">$79999</p>
+                <div class="puntaje">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <button class="boton-comprar">COMPRAR</button>
+        
+        </article>
+        <article class="tarjeta" data-nombre:"consola-xbox" data-categoria:"consolas" data-precio: "69999" data-puntaje:"4">
+        
+            <div class="contenedor-img">
+                <img src=img/xbox.jpg class="imagen-producto">
+            </div>
+        
+            <div class="contenedor-descripcion">
+                <h3 class="nombre-producto">Xbox One</h3>
+                <p class="precio-producto">$69999</p>
+                <div class="puntaje">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <button class="boton-comprar">COMPRAR</button>
+        
+        </article>
+        <article class="tarjeta" data-nombre:"mouse" data-categoria:"accesorios" data-precio: "4999" data-puntaje:"5">
+        
+            <div class="contenedor-img">
+                <img src=img/mouse.jpeg class="imagen-producto">
+            </div>
+        
+            <div class="contenedor-descripcion">
+                <h3 class="nombre-producto">Mouse Gamer</h3>
+                <p class="precio-producto">$4999</p>
+                <div class="puntaje">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <button class="boton-comprar">COMPRAR</button>
+        
+        </article>
+    
+    </div>
 
-        </main>
+</main>
 
     </section>
   
 
-<footer></footer>
-
-</div>
-
-
-
-
-
-
-    </section>
+<footer>
+    <div class="contenedor-logo">
+        <img src="img/logoAdaPequeño.jpeg" class="logo-ada-nav">
+    </div>
+    <p>ADA SHOP - Gracias por visitarnos</p>
+</footer>
 
 <script src="index.js"></script>  
 </body>
